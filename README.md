@@ -1,125 +1,125 @@
-# Labyrinthe Game - Projet de Jeu de Casse-Tête en C++ avec Raylib
+# Maze Game - Puzzle Game Project in C++ with Raylib
 
-## Description du Projet
+## Project Description
 
-Ce projet consiste à développer un jeu de casse-tête de type labyrinthe en utilisant la programmation orientée objet (POO) en C++ et la bibliothèque graphique Raylib. Le jeu propose une expérience immersive où le joueur doit naviguer dans un labyrinthe généré aléatoirement à chaque nouvelle partie. Le jeu comprend trois niveaux de difficulté (facile, moyen, difficile) qui affectent la taille du labyrinthe et la complexité de la navigation.
+This project involves developing a maze-based puzzle game using object-oriented programming (OOP) in C++ and the Raylib graphics library. The game offers an immersive experience where the player navigates through a randomly generated maze in each new game session. The game features three difficulty levels (easy, medium, hard), which affect the size and complexity of the maze.
 
-## Fonctionnalités
+## Features
 
-### 1. Génération Automatique de Labyrinthes
-- Génération procédurale de labyrinthes à chaque lancement du jeu.
-- Respect des règles de connexité : chaque position doit être atteignable et une solution doit exister.
+### 1. Automatic Maze Generation
+- Procedural generation of mazes at the start of each game.
+- Ensures connectivity: every position in the maze is reachable, and a solution always exists.
 
-### 2. Trois Niveaux de Difficulté
-- **Facile** : Petit labyrinthe avec peu de pièges ou d'obstacles.
-- **Moyen** : Labyrinthe de taille moyenne avec des chemins plus complexes et des obstacles plus nombreux.
-- **Difficile** : Grand labyrinthe avec de multiples chemins trompeurs et des obstacles complexes.
+### 2. Three Difficulty Levels
+- **Easy**: Small maze with few traps or obstacles.
+- **Medium**: Medium-sized maze with more complex paths and additional obstacles.
+- **Hard**: Large maze with multiple deceptive paths and complex obstacles.
 
-### 3. Interface Graphique avec Raylib
-- Visualisation en 2D avec Raylib.
-- Représentation des murs par des blocs et d'un personnage contrôlable par le joueur.
-- Déplacement du joueur avec les touches de direction.
+### 3. Graphical Interface with Raylib
+- 2D visualization using Raylib.
+- Walls are represented by blocks, and the player controls a character.
+- Player movement is controlled using arrow keys.
 
-### 4. Mécanique de Jeu
-- Le joueur commence à l’entrée du labyrinthe et doit atteindre la sortie.
-- Chronomètre affichant le temps pris pour résoudre le labyrinthe.
-- Possibilité de réinitialiser la partie à tout moment, générant ainsi un nouveau labyrinthe.
+### 4. Game Mechanics
+- The player starts at the entrance of the maze and must reach the exit.
+- A timer displays the time taken to solve the maze.
+- Option to reset the game at any time, generating a new maze.
 
-### 5. Système de Sauvegarde et de Scores (Optionnel)
-- Enregistrement du temps du joueur à la fin de chaque partie.
-- Affichage d'un tableau des meilleurs scores.
+### 5. Save and Score System (Optional)
+- Records the player's time at the end of each game.
+- Displays a leaderboard of the best scores.
 
-## Exigences Techniques
+## Technical Requirements
 
-- **Langage** : C++
-- **Bibliothèque Graphique** : Raylib (gestion de l'interface graphique 2D)
-- **Modèle de Programmation** : Programmation orientée objet (POO)
+- **Language**: C++
+- **Graphics Library**: Raylib (2D graphical interface)
+- **Programming Model**: Object-Oriented Programming (OOP)
 
-## Classes Clés
+## Key Classes
 
-### 1. Labyrinthe
-- Représente la grille du labyrinthe et contient les méthodes de génération aléatoire.
-- **Propriétés** : largeur, hauteur, tableau 2D de cases (murs ou passages).
-- **Méthodes** : génération procédurale, vérification de solution, affichage.
+### 1. Maze
+- Represents the maze grid and contains methods for random generation.
+- **Properties**: width, height, 2D array of cells (walls or paths).
+- **Methods**: procedural generation, solution verification, rendering.
 
-### 2. Joueur
-- Représente le personnage contrôlé par le joueur.
-- **Propriétés** : position x, position y, mouvements.
-- **Méthodes** : déplacement, interaction avec le labyrinthe.
+### 2. Player
+- Represents the player-controlled character.
+- **Properties**: x position, y position, movements.
+- **Methods**: movement, interaction with the maze.
 
-### 3. Niveau
-- Gestion des niveaux de difficulté (facile, moyen, difficile).
-- **Méthodes** : sélection de la taille du labyrinthe et ajustement des obstacles en fonction du niveau.
+### 3. Level
+- Manages difficulty levels (easy, medium, hard).
+- **Methods**: adjusts maze size and obstacles based on the selected difficulty.
 
-### 4. Jeu
-- Gestion de la boucle principale du jeu.
-- **Propriétés** : état du jeu, chronomètre, interface utilisateur (menu, fin de partie).
-- **Méthodes** : gestion des événements, démarrage et réinitialisation des parties.
+### 4. Game
+- Manages the main game loop.
+- **Properties**: game state, timer, user interface (menu, end screen).
+- **Methods**: event handling, game start, and reset.
 
-## Défis Techniques
+## Technical Challenges
 
-- Implémentation de l’algorithme de génération procédurale des labyrinthes (par exemple, avec l'algorithme de recherche en profondeur ou Prim).
-- Gestion des collisions pour assurer que le joueur ne traverse pas les murs.
-- S’assurer que chaque labyrinthe généré est résolvable.
+- Implementing a procedural maze generation algorithm (e.g., Depth-First Search or Prim's algorithm).
+- Handling collisions to ensure the player cannot pass through walls.
+- Ensuring that every generated maze is solvable.
 
-## Résultats Attendus
+## Expected Results
 
-À la fin de ce projet, le jeu devra être fonctionnel, avec une interface graphique intuitive, un gameplay fluide, et des labyrinthes de difficultés variables générés automatiquement. Le jeu doit être jouable sur différentes plateformes grâce à la portabilité de Raylib.
+By the end of this project, the game will be fully functional, with an intuitive graphical interface, smooth gameplay, and mazes of varying difficulty generated automatically. The game will be playable on different platforms thanks to Raylib's portability.
 
-## Livrables
+## Deliverables
 
-- Code source (organisé, commenté en FR ou ANG)
-- Rapport détaillé
+- Source code (organized and commented in English or French).
+- Detailed report.
 
-## Extensions Possibles (Optionnel)
+## Possible Extensions (Optional)
 
-- Ajout d'obstacles mobiles ou de pièges.
-- Introduction de thèmes visuels différents selon les niveaux de difficulté.
-- Multijoueur local avec un second joueur contrôlé par une autre touche ou un contrôleur.
+- Adding moving obstacles or traps.
+- Introducing different visual themes for each difficulty level.
+- Local multiplayer with a second player controlled by another key or controller.
 
-## Comment Ajouter ce Projet sur GitHub
+## How to Add This Project to GitHub
 
-1. **Créer un Nouveau Dépôt sur GitHub** :
-   - Allez sur [GitHub](https://github.com) et connectez-vous à votre compte.
-   - Cliquez sur le bouton "New" pour créer un nouveau dépôt.
-   - Donnez un nom à votre dépôt (par exemple, `Labyrinthe-Game`).
-   - Choisissez entre un dépôt public ou privé.
-   - Cliquez sur "Create repository".
+1. **Create a New Repository on GitHub**:
+   - Go to [GitHub](https://github.com) and log in to your account.
+   - Click the "New" button to create a new repository.
+   - Name your repository (e.g., `Maze-Game`).
+   - Choose between a public or private repository.
+   - Click "Create repository".
 
-2. **Initialiser un Dépôt Git Local** :
-   - Ouvrez un terminal sur votre machine locale.
-   - Naviguez jusqu'au dossier de votre projet.
-   - Initialisez un dépôt Git avec la commande suivante :
+2. **Initialize a Local Git Repository**:
+   - Open a terminal on your local machine.
+   - Navigate to your project folder.
+   - Initialize a Git repository with the following command:
      ```bash
      git init
      ```
 
-3. **Ajouter les Fichiers au Dépôt Local** :
-   - Ajoutez tous les fichiers de votre projet avec la commande :
+3. **Add Files to the Local Repository**:
+   - Add all project files using the command:
      ```bash
      git add .
      ```
-   - Faites un commit des fichiers ajoutés :
+   - Commit the added files:
      ```bash
      git commit -m "Initial commit"
      ```
 
-4. **Lier le Dépôt Local à GitHub** :
-   - Copiez l'URL de votre dépôt GitHub (disponible sur la page du dépôt).
-   - Ajoutez l'URL comme remote avec la commande :
+4. **Link the Local Repository to GitHub**:
+   - Copy the URL of your GitHub repository (available on the repository page).
+   - Add the URL as a remote with the command:
      ```bash
-     git remote add origin https://github.com/votre-utilisateur/Labyrinthe-Game.git
+     git remote add origin https://github.com/your-username/Maze-Game.git
      ```
 
-5. **Pousser les Fichiers sur GitHub** :
-   - Poussez les fichiers sur GitHub avec la commande :
+5. **Push Files to GitHub**:
+   - Push the files to GitHub using the command:
      ```bash
-     git push -u origin master
+     git push -u origin main
      ```
 
-6. **Vérifier sur GitHub** :
-   - Allez sur la page de votre dépôt GitHub pour vérifier que tous les fichiers ont bien été poussés.
+6. **Verify on GitHub**:
+   - Go to your GitHub repository page to ensure all files have been pushed successfully.
 
 ## Conclusion
 
-Vous avez maintenant un projet de jeu de labyrinthe fonctionnel et hébergé sur GitHub. Vous pouvez continuer à développer de nouvelles fonctionnalités, corriger des bugs, et collaborer avec d'autres développeurs en utilisant les fonctionnalités de GitHub. Bon codage !
+You now have a fully functional maze game project hosted on GitHub. You can continue developing new features, fixing bugs, and collaborating with other developers using GitHub's features. Happy coding!
